@@ -17,7 +17,7 @@ module.exports = function(config) {
     files: [
       'test/phantom-polyfill.js',
       'node_modules/handsontable/dist/handsontable.full.js',
-      'dist/ngHandsontable.min.js',
+      'dist/ng-handsontable.min.js',
       'test/**/*.spec.js'
     ],
 
