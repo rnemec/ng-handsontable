@@ -1,4 +1,6 @@
-# ngHandsontable - the AngularJS directive for [Handsontable](https://github.com/handsontable/handsontable) [![Build Status](https://travis-ci.org/handsontable/ngHandsontable.png?branch=master)](https://travis-ci.org/handsontable/ngHandsontable)
+# ng-handsontable - the AngularJS directive for [Handsontable](https://github.com/handsontable/handsontable)
+
+[![Build Status](https://travis-ci.org/rnemec/ng-handsontable.png?branch=master)](https://travis-ci.org/rnemec/ng-handsontable)
 
 Enables creation of data grid applications in AngularJS.
 
@@ -14,7 +16,7 @@ Include the library files:
 <link rel="stylesheet" media="screen" href="bower_components/handsontable/dist/handsontable.full.css">
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/handsontable/dist/handsontable.full.js"></script>
-<script src="dist/ngHandsontable.js"></script>
+<script src="bower_components/ng-handsontable/dist/ng-handsontable.js"></script>
 ```
 
 Include component to your app:
@@ -74,14 +76,14 @@ $scope.db.items = [
   //more items go here
 ];
 ```
-  
+
 ## Directives and attributes specification
 
-Main directive for creating table is `<hot-table>`. For defining column options you can use settings object with 
-columns property. If you want to describe column behavior in declarative way you can add `<hot-column>` directive 
+Main directive for creating table is `<hot-table>`. For defining column options you can use settings object with
+columns property. If you want to describe column behavior in declarative way you can add `<hot-column>` directive
 as a children of `<hot-table>` element and add all neccessary attributes to describe column options.
 
-All **Handsontable** options listed [here](http://docs.handsontable.com/Options.html) should be supported. 
+All **Handsontable** options listed [here](http://docs.handsontable.com/Options.html) should be supported.
 Options in camelCase mode should be passed to the directive in hyphenate mode e.q `autoWrapCol: true` -> `<hot-table auto-wrap-col>`.
 
 It's recommended to put all your settings in one big object (`settings="ctrl.settings"`).

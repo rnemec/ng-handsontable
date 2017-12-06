@@ -1,5 +1,5 @@
 /**
- * This file is used to build ngHandsontable from `src/*`
+ * This file is used to build ng-handsontable from `src/*`
  *
  * Installation:
  * 1. Install Grunt CLI (`npm install -g grunt-cli`)
@@ -10,9 +10,9 @@
  * To execute automatically after each change, execute `grunt --force default watch`
  *
  * Result:
- * building ngHandsontable will create files:
- *  - dist/ngHandsontable.js
- *  - dist/ngHandsontable.min.js
+ * building ng-handsontable will create files:
+ *  - dist/ng-handsontable.js
+ *  - dist/ng-handsontable.min.js
  *
  * See http://gruntjs.com/getting-started for more information about Grunt
  */
@@ -21,9 +21,9 @@ module.exports = function (grunt) {
     ' * <%= pkg.name %> <%= pkg.version %>\n' +
     ' * \n' +
     ' * Copyright 2012-2015 Marcin Warpechowski\n' +
-    ' * Copyright 2015 Handsoncode sp. z o.o. <hello@handsontable.com>\n' +
+    ' * Copyright 2017 Richard Nemec\n' +
     ' * Licensed under the MIT license.\n' +
-    ' * https://github.com/handsontable/ngHandsontable\n' +
+    ' * https://github.com/rnemec/ng-handsontable\n' +
     ' * Date: <%= (new Date()).toString() %>\n' +
     '*/\n\n';
 
@@ -37,11 +37,11 @@ module.exports = function (grunt) {
       new: {
         src: [
           'src/ie-shim.js',
-          'src/ngHandsontable.js',
+          'src/ng-handsontable.js',
           'src/services/*.js',
           'src/directives/*.js'
         ],
-        dest: 'dist/ngHandsontable.js'
+        dest: 'dist/ng-handsontable.js'
       }
     },
 
@@ -49,7 +49,7 @@ module.exports = function (grunt) {
       options: {
         banner: myBanner
       },
-      "dist/ngHandsontable.min.js": ["dist/ngHandsontable.js"]
+      "dist/ng-handsontable.min.js": ["dist/ng-handsontable.js"]
     },
 
     jshint: {
